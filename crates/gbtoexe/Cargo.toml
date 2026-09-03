@@ -1,0 +1,15 @@
+[package]
+name = "gbtoexe"
+description = "Convert a Game Boy ROM into a native Windows executable."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "gbtoexe"
+path = "src/main.rs"
+
+[dependencies]
+gb-hw = { path = "../gb-hw" }
+gb-recomp = { path = "../gb-recomp" }
+gb-payload = { path = "../gb-payload" }

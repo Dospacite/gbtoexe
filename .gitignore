@@ -1,0 +1,11 @@
+/target
+dist/
+stubs/
+# Never commit ROMs or ROM archives.
+*.gb
+*.gbc
+*.gbx
+*.sgb
+*.zip
+*.sav
+*.exe

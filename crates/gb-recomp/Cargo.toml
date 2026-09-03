@@ -1,0 +1,9 @@
+[package]
+name = "gb-recomp"
+description = "Static recompiler: SM83 machine code in, x86-64 machine code out."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+gb-hw = { path = "../gb-hw" }

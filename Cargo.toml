@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = ["crates/gb-hw", "crates/gb-payload", "crates/gb-recomp", "crates/gb-runtime", "crates/gbtoexe"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Dospacite/gbtoexe"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = true

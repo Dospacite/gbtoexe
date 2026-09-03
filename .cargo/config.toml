@@ -1,0 +1,5 @@
+# Building the Windows stub needs the mingw-w64 linker; naming it here means a
+# plain `cargo build --target x86_64-pc-windows-gnu` works without extra setup.
+[target.x86_64-pc-windows-gnu]
+linker = "x86_64-w64-mingw32-gcc"
+ar = "x86_64-w64-mingw32-ar"

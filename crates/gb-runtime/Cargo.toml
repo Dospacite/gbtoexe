@@ -1,0 +1,15 @@
+[package]
+name = "gb-runtime"
+description = "The executable stub gbtoexe stamps a translated game into."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "gb-runtime"
+path = "src/main.rs"
+
+[dependencies]
+gb-hw = { path = "../gb-hw" }
+gb-recomp = { path = "../gb-recomp" }
+gb-payload = { path = "../gb-payload" }
